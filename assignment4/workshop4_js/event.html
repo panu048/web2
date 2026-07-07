@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button>Check</button>
+        <script>
+            const btn = document.querySelector("button");
+            btn.addEventListener("click",function(){
+                alert("ยินดีต้อนรับ");
+            });
+            btn.addEventListener("mouseover",function() {
+                btn.style.backgroundColor="lightgrey";
+            });
+            btn.addEventListener("mouseout", ()=>{
+                btn.style.backgroundColor="";
+            })
+        </script>
+    </body>
+</html>

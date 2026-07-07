@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="text" id="uname" placeholder="กรุณาใส่ชื่อ...">
+        <input type="email" id="email" placeholder="กรุณาใส่ email address">
+        <input type="password" id="pwd" placeholder="กรุณาใส่ password">
+        <p id="showuname"></p>
+        <p id="message"></p>
+        <script>
+            const unameInput = document.getElementById("uname");
+            const emailInput = document.getElementById("email");
+            const pwdInput = document.getElementById("pwd");
+            unameInput.addEventListener("input", () =>{
+                const showPara = document.getElementById("showuname");
+                showPara.textContent = "ยินดีต้อนรับ "+unameInput.value;
+            })
+
+            emailInput.addEventListener("input",() =>{
+                const showMessage = document.getElementById("message");
+                if(emailInput.value.includes("@")){
+                    showMessage.textContent = "อีเมล์ของคุณ คือ "+
+                    emailInput.value;
+                }else{
+                    showMessage.textContent = "อีเมล์ไม่ถูกต้องกรุณากรอกใหม่";
+                }
+            })
+            pwdInput.addEventListener("input", () =>{
+                const showMessage = document.getElementById("message");
+                    if(pwdInput.value.length<8){
+                        showMessage.textContent = "อย่างน้อยต้อง 8 ตัวอักษร";
+                    }else{
+                        showMessage.textContent="รหัสผ่านมีความยาว "+pwdInput.value.length+" ตัวอักษร";
+                    }
+            })
+        </script>
+    </body>
+</html>
