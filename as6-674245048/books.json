@@ -1,0 +1,26 @@
+[
+  {
+    "isbn": "885415125421",
+    "title": "Node.js",
+    "author": "Suvimol Mukviboonchai",
+    "year": "2023",
+    "publisher": "NPRU",
+    "status": "available"
+  },
+  {
+    "isbn": "8854225655",
+    "title": "Web Application",
+    "author": "John Doe",
+    "year": "2022",
+    "publisher": "Tech Press",
+    "status": "borrowed"
+  },
+  {
+    "isbn": "2437535",
+    "title": "Test",
+    "author": "me",
+    "year": "2000",
+    "publisher": "me",
+    "status": "available"
+  }
+]
